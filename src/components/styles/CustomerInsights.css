@@ -1,0 +1,20 @@
+.customer-insights {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .insights-items {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .insight-item {
+    text-align: center;
+  }
+  
+  .insight-item span {
+    color: #777;
+  }
+  

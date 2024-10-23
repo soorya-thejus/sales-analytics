@@ -1,0 +1,31 @@
+.products-page {
+    padding: 20px;
+  }
+  
+  .products-page input {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .products-page ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .products-page ul li {
+    margin: 10px 0;
+  }
+  
+  .products-page ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .products-page ul li a:hover {
+    text-decoration: underline;
+  }
+  

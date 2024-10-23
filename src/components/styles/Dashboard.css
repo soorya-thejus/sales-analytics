@@ -1,0 +1,73 @@
+.dashboard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overview-container,
+.chart-container,
+.top-products-container,
+.customer-insights {
+  margin-bottom: 20px; /* Space between sections */
+}
+
+.chart-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sales-by-region, 
+.sales-performance {
+  flex-grow: 1;
+  flex-basis: 45%; /* Take about half the width */
+  min-width: 300px; /* Ensure a minimum width */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-products-container, 
+.customer-insights {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.customer-insights .insights-items,
+.overview-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.insight-item, 
+.overview-item {
+  text-align: center;
+  flex-basis: 32%;
+}
+
+.insight-item span,
+.overview-item span {
+  color: #777;
+}
+
+/* For mobile responsiveness, stack items on smaller screens */
+@media (max-width: 768px) {
+  .chart-container {
+    flex-direction: column;
+  }
+
+  .sales-by-region, 
+  .sales-performance {
+    flex-basis: 100%; /* Take full width on small screens */
+  }
+
+  .insight-item, 
+  .overview-item {
+    flex-basis: 100%; /* Stack items vertically */
+    margin-bottom: 20px;
+  }
+}

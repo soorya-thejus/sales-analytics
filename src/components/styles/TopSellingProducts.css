@@ -1,0 +1,25 @@
+.top-products {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .top-products ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .top-products ul li {
+    margin: 10px 0;
+  }
+  
+  .top-products ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .top-products ul li a:hover {
+    text-decoration: underline;
+  }
+  

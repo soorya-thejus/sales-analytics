@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Sidebar from './components/Sidebar';
+import Dashboard from './components/Dashboard';
 
-function App() {
+export const App: React.FC = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <button className="toggle-button" onClick={toggleSidebar}>
+        ☰
+      </button>
+      {isSidebarOpen && <Sidebar />}
+      <div className={`content-container ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+        <Dashboard />
+      </div>
     </div>
   );
-}
-
+};
 export default App;

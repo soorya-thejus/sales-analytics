@@ -1,0 +1,45 @@
+
+  
+  .sidebar h2 {
+    margin-bottom: 20px; /* Space below heading */
+    color: #ffc107; /* Yellow color for header */
+  }
+  
+  .sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #495057;
+    border-radius: 4px;
+  }
+  
+  
+  .sidebar ul li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .sidebar ul li a:hover {
+    color: #ffc107; /* Change color on hover */
+  }
+  .sidebar {
+    width: 200px; 
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Make the sidebar fixed */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Ensure full height */
+    z-index: 1000; /* Ensure the sidebar is on top */
+  }
+  

@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%; /* Full height for html and body */
+  margin: 0; /* Remove default margin */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  display: flex; /* Flexbox for layout */
+  height: 100%; /* Full height for the app container */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-container {
+  flex: 1; /* Allow the content to take the remaining width */
+  padding: 20px; /* Add padding for content */
+  background-color: #f8f9fa; /* Light background for contrast */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2{
+  margin-top: 0px;
+}
+/* Sidebar toggle button */
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #343a40;
   color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 2000; /* Ensure it stays above other elements */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content-container.sidebar-open {
+  margin-left: 220px; /* Shift content to the right when sidebar is open */
 }
