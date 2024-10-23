@@ -3,6 +3,7 @@ import './styles/Dashboard.css';
 import { CustomerInsights } from './CustomerInsights';
 import { ProductPerformance } from './ProductPerfomance';
 import {Header} from './Header';
+import { SalesByRegion } from './SalesByRegion';
 
 const Dashboard: React.FC = () => {
   return (
@@ -28,8 +29,8 @@ const Dashboard: React.FC = () => {
       </div>
 
       <div className="chart-container">
-        <div className="sales-by-region">
-          <ProductPerformance />
+        <div >
+          <SalesByRegion />
         </div>
         <div className="sales-performance">
           <ProductPerformance />

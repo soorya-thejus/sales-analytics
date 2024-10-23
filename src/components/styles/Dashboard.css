@@ -18,8 +18,7 @@
   justify-content: space-between;
 }
 
-.sales-by-region, 
-.sales-performance {
+.chart-container {
   flex-grow: 1;
   flex-basis: 45%; /* Take about half the width */
   min-width: 300px; /* Ensure a minimum width */
@@ -28,7 +27,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.overview-container,
 .top-products-container, 
 .customer-insights {
   background-color: white;
